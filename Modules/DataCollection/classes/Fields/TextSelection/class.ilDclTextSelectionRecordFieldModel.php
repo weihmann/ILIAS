@@ -1,8 +1,6 @@
 <?php
 /* Copyright (c) 1998-2009 ILIAS open source, Extended GPL, see docs/LICENSE */
 
-use PhpOffice\PhpSpreadsheet\Cell\DataType;
-
 /**
  * Class ilDclTextSelectionRecordFieldModel
  *
@@ -17,11 +15,11 @@ class ilDclTextSelectionRecordFieldModel extends ilDclSelectionRecordFieldModel
      * @param ilExcel $worksheet
      * @param         $row
      * @param         $col
-     * @throws \PhpOffice\PhpSpreadsheet\Exception
+     * @throws PHPExcel_Exception
      */
     public function fillExcelExport(ilExcel $worksheet, &$row, &$col)
     {
-        $worksheet->setCell($row, $col, $this->getExportValue(), DataType::TYPE_STRING);
+        $worksheet->setCell($row, $col, $this->getExportValue(), PHPExcel_Cell_DataType::TYPE_STRING);
         $col++;
     }
 

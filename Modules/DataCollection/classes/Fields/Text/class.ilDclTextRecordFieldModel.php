@@ -1,7 +1,5 @@
 <?php
 
-use PhpOffice\PhpSpreadsheet\Cell\DataType;
-
 /**
  * Class ilDclTextRecordFieldModel
  *
@@ -25,9 +23,10 @@ class ilDclTextRecordFieldModel extends ilDclBaseRecordFieldModel
     }
 
     /**
-     * @param $worksheet
-     * @param $row
-     * @param $col
+     * @param ilExcel $worksheet
+     * @param         $row
+     * @param         $col
+     * @throws PHPExcel_Exception
      */
     public function fillExcelExport(ilExcel $worksheet, &$row, &$col)
     {
@@ -44,7 +43,7 @@ class ilDclTextRecordFieldModel extends ilDclBaseRecordFieldModel
                 $col+= 2;
             }
         } else {
-            $worksheet->setCell($row, $col, $value, DataType::TYPE_STRING);
+            $worksheet->setCell($row, $col, $value, PHPExcel_Cell_DataType::TYPE_STRING);
             $col++;
         }
     }

@@ -271,7 +271,7 @@ class ilExcel
      * @param int   $a_col
      * @param mixed $a_value
      * @param null  $a_datatype
-     * @throws \PhpOffice\PhpSpreadsheet\Exception
+     * @throws PHPExcel_Exception
      */
     public function setCell($a_row, $a_col, $a_value, $a_datatype = null)
     {
