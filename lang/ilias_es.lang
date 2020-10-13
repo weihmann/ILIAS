@@ -12528,7 +12528,7 @@ crs#:#crs_loc_settings_passed_mode_mark#:#Se marcan las preguntas del test para 
 assessment#:#correct_answers#:#Respuetas correctas: 
 assessment#:#answer_options#:#Opciones de respuesta: 
 assessment#:#add_answers#:#Añadir respuetas
-assessment#:#log_wrong_test_password_entered#:#El participante introdujo un clave para el test incorrecta. Entrada: '%s'
+assessment#:#log_wrong_test_password_entered#:#El participante introdujo un clave para el test incorrecta.
 assessment#:#tst_nav_while_edit_modal_header#:#Decisión sobre respuestas
 assessment#:#tst_nav_while_edit_modal_text#:#Indica lo que quieres hacer con las respuestas que has podido responder en esta pregunta
 assessment#:#tst_nav_while_edit_modal_save_btn#:#Guardar
